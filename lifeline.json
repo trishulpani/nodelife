@@ -1,0 +1,117 @@
+{
+  "name" : "lifeline",
+  "nodes": [
+    {
+      "id": "1",
+      "segmentName": "Day 1",
+      "textLines": ["[incoming communication]",
+      "[establishing connection]",
+      "[receiving message]",
+        "Hello?",
+        "Is this thing working?",
+        "Can anyone read me?"
+      ],
+      "choices": [
+        {
+          "btnText": "Who is this?",
+          "nextNodeId": "2"
+        },
+        {
+          "btnText": "I read you.",
+          "nextNodeId": "4"
+        }
+      ],
+      "isTerminalNode": false,
+      "delay_seconds": "1"
+    },
+    {
+      "id": "2",
+      "segmentName": "Day 1",
+      "textLines": [
+        "Right, right, sorry.  Should've started with that.",
+        "I was just excited to get a response to my signal.",
+        "My name's Taylor.",
+        "I was a... an astronaut on board the starship Varia."
+      ],
+      "choices": [
+        {
+          "btnText": "The Varia?",
+          "nextNodeId": "3"
+        },
+        {
+          "btnText": "\"Was\"? What happened?",
+          "nextNodeId": "5"
+        }
+      ],
+      "isTerminalNode": false,
+      "delay_seconds": "1"
+    },
+    {
+      "id": "3",
+      "segmentName": "Day 1",
+      "textLines": [
+        "The Varia was a transport ship. Nothing fancy. Crew of less than a dozen.",
+        "We were en route to Tau Ceti IV and, as far as I knew, everything was going fine!",
+        "We were set to dock in six more days.",
+        "But then... I don't know what happened. We crashed on some moon.",
+        "I don't know where."
+      ],
+      "choices": [
+        {
+          "btnText": "How do you not know?",
+          "nextNodeId": "3"
+        },
+        {
+          "btnText": "Try using a map.",
+          "nextNodeId": "3"
+        }
+      ],
+      "isTerminalNode": true,
+      "delay_seconds": "1"
+    },
+     {
+      "id": "4",
+      "segmentName": "Day 1",
+      "textLines": [
+        "Oh, thank God!  It's so good to have human contact!",
+        "It's been hours!"
+      ],
+      "choices": [
+        {
+          "btnText": "Who are you?",
+          "nextNodeId": "2"
+        },
+        {
+          "btnText": "What happened?",
+          "nextNodeId": "5"
+        }
+      ],
+      "isTerminalNode": true,
+      "delay_seconds": "1"
+    },
+     {
+      "id": "5",
+      "segmentName": "Day 1",
+      "textLines": [
+        "Our ship crashed on some moon. I have no idea where.",
+        "I managed to get to an escape pod, but I couldn't tell if anyone else made it into one.",
+        "My IEVA suit sensor tells me that the air here is breathable, at least, so that's nothing short of a miracle.",
+        "But I've got no food or water rations on me.The toolkit on the pod is about as basic as they come.",
+        "I managed to get the pod's mobile transmitter working, but -- lucky you -- you seem to be the only one in range of the signal.",
+        "Whoever and wherever you might be."
+      ],
+      "choices": [
+        {
+          "btnText": "Are you all right?",
+          "nextNodeId": "2"
+        },
+        {
+          "btnText": "Where are you?",
+          "nextNodeId": "3"
+        }
+      ],
+      "isTerminalNode": true,
+      "delay_seconds": "1"
+    }
+  ]
+}
